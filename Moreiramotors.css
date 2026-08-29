@@ -170,21 +170,24 @@ button:hover{
 }
 
 
-/* BOTÃO WHATSAPP */
+/* BOTÃO MAPS */
 
-.whatsapp{
-    background-color: rgb(33, 155, 8);
+.contato .maps{
+    background-color: rgb(207, 13, 13);
     color: white;
 
     box-shadow:
         0px 0px 12px
-        rgba(136, 224, 136, 0.7);
+        rgba(207, 13, 13, 0.6);
 }
 
-.whatsapp:hover{
-    background-color: rgb(136, 224, 136);
-}
+.contato .maps:hover{
+    transform: scale(1.05);
 
+    box-shadow:
+        0px 0px 15px
+        rgba(207, 13, 13, 0.7);
+}
 
 /* SERVIÇOS */
 
@@ -302,7 +305,7 @@ button:hover{
     text-align: center;
 }
 
-.sobre div{
+.sobre p{
     max-width: 700px;
 
     margin: auto;
@@ -325,10 +328,6 @@ button:hover{
     color: white;
 
     text-align: center;
-}
-
-.contato button{
-    background-color: rgb(33, 155, 8);
 }
 
 
