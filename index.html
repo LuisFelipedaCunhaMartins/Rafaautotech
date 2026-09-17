@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +6,13 @@
     <title>Rafa Auto Tech</title>
     
     <link rel="stylesheet" href="Moreiramotors.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -111,24 +117,60 @@
 
 </section>
 
-<!--fotos-->
-
-<section class="galeria">
+<!-- GALERIA -->
+<section class="galeria" id="galeria">
 
     <h2>Nosso trabalho</h2>
 
-    <div class="fotos">
+    <div class="carrossel">
 
-        <img src="oficina1.webp" alt="Oficina automotiva">
+        <button class="seta esquerda" onclick="mudarFoto(-1)">
+            &#10094;
+        </button>
 
-        <img src="Oficina2.avif" alt="Serviço automotivo">
+        <div class="carrossel-janela">
 
-        <img src="Oficina3.avif" alt="Manutenção de veículo">
+            <div class="fotos" id="fotos">
 
+                <img src="Oficina1.png"
+                     alt="Oficina automotiva"
+                     onclick="abrirImagem(this)">
+
+                <img src="Oficina2.png"
+                     alt="Serviço automotivo"
+                     onclick="abrirImagem(this)">
+
+                <img src="Oficina3.png"
+                     alt="Manutenção de veículo"
+                     onclick="abrirImagem(this)">
+
+                <img src="Oficina4.png"
+                     alt="Manutenção de veículo"
+                     onclick="abrirImagem(this)">
+
+            </div>
+
+        </div>
+
+        <button class="seta direita" onclick="mudarFoto(1)">
+            &#10095;
+        </button>
 
     </div>
 
 </section>
+
+<!-- IMAGEM AMPLIADA -->
+<div class="modal-imagem" id="modalImagem"
+     onclick="fecharImagem(event)">
+
+    <button class="fechar" onclick="fecharModal()">
+        &times;
+    </button>
+
+    <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+
+</div>
 
 
 <!--Sobre-->
