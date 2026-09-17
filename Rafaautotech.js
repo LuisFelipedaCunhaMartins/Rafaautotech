@@ -20,9 +20,7 @@ function agendarServico() {
 
 
 /* GOOGLE MAPS */
-
 function comoChegar() {
-
     const endereco =
         "Rua dos Pássaros, 14, Montanhão, São Bernardo do Campo, SP, 09784-060";
 
