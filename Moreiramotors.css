@@ -185,15 +185,21 @@ button:hover{
 
 /* BOTÃO MAPS */
 
-.local .maps {
+.contato .maps{
     background-color: rgb(207, 13, 13);
     color: white;
-    box-shadow: 0 0 12px rgba(207, 13, 13, 0.6);
+
+    box-shadow:
+        0px 0px 12px
+        rgba(207, 13, 13, 0.6);
 }
 
-.local .maps:hover {
+.contato .maps:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(207, 13, 13, 0.7);
+
+    box-shadow:
+        0px 0px 15px
+        rgba(207, 13, 13, 0.7);
 }
 
 /* SERVIÇOS */
